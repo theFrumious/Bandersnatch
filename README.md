@@ -8,4 +8,8 @@ Run the .tap file in FUSE.
 
 That's it! Enjoy a Happy Christmas :) 
 
+## How to build
+1. Edit the .bas file
+2. zmakebas -o filename.tap filename.bas
+
 

@@ -1,0 +1,61 @@
+/*
+In 2019, a young programmer begins to understand reality, as he adapts a dark Black Mirror Episode into a video game. A mind-bending tale with multiple endings.
+*/
+
+
+A Netflix Original Series
+<CLS>
+A spinning buffering timer breaks into a series of shapes and forms the words BLACK MIRROR
+<animation>
+The words shatter like broken glass...
+...then melt into darkness
+<CLS>
+The title: Bandersnatch
+<CLS>
+
+A digital clock clicks on
+["Relax" playing]
+8:30, 9th of July, 1984 and Stefan, a young teenager asleep in bed awakes with a fake gasp clutching his chest. [gasps]
+
+[Relax, don't do it - music continues on the radio]
+
+Next to the desk is a thick, well-thumbed paperback. He turns off the alarm.[music stops]
+
+In the bathroom, the 19-year old who has a mop of curly dark hair, unscrews the top of a bottle of pills and shakes two capsules into the palm of his hand. He swallows them down with a gulp of water from the tap, looking at his reflection.
+
+A 40-year old man comes out of a room. Locking the door, he looks up to see Stefan emerging from the bathroom.
+"Breakfast?", he asks.
+Stefan walks past him with a smiling nod.
+
+At the breakfast table, now dressed, he's leafing through the thick book.
+
+His dad stubs a cigarette out on a glass ashtray and peers at the boy behind his specs.
+
+<dialog>
+Here's your tea.
+Thanks, Dad."
+"Sorry. Sorry, I was miles away.
+Got to get everything ready for today."
+[dad] This with some computer people?
+"Yeah. Tuckersoft.
+They do Colin Ritman's games."
+Oh, not<i> the</i> Colin Ritman.
+Mr. Thakur, the owner,
+"said I could show them
+my Bandersnatch demo."
+"-Your Bander-what?
+-Bandersnatch."
+I've based it on the book.
+</>
+He shows dad the front cover.
+
+Was that your mother's?
+It was in her things, yeah.
+"-Don't know if she read it though.
+-Don't think so."Jerome F. Davies."Well, he can't be a great writer."You're always flicking backwards
+and forwards in that."
+No, it's a Choose Your Own Adventure" book. You decide what your character does. "-You know, like a game.
+-[dad] Sounds thrilling."How about you decide what you want for your breakfast?"
+
+
+
