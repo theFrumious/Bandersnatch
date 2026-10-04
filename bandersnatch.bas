@@ -1,6 +1,6 @@
 10 BORDER 0: PAPER 0: INK 2: CLS
 20 FOR y = 40 TO 130: PLOT 100,y: DRAW BRIGHT 1;10,0: NEXT y
-30 FOR x = 0 TO 30: LET y = 130 - (x * 3): PLOT 100+x, y: DRAW BRIGHT 0;10,0: NEXT x
+30 FOR x = 0 TO 30: LET y = 130 - (x * 3): PLOT 100+x, y: DRAW 10,0: NEXT x
 40 FOR y = 40 TO 130: PLOT 140,y: DRAW BRIGHT 1;10,0: NEXT y
 50 beep .1,-24: beep 0.001,9: Beep .5,-12: beep 0.001,-12
 60 FOR x = 0 TO 30: LET y = 130 - (x * 3): PLOT 100+x, y: DRAW 10,0: NEXT x
@@ -9,15 +9,19 @@
 72 PRINT AT 1,0;"A spinning buffering timer": FOR x=1 to 8: READ d: PRINT AT 11,16; BRIGHT 1; CHR$ d: BEEP 0.01, (d-100)/2: PAUSE 20: NEXT x
 73 DATA 142,134,135,137,141,134,139,137
 74 PRINT at 2,0;"breaks into a series of shapes"
-75 for x = 5 to 0 step -1: read a$: print at 11,11;a$: beep 0.01,8: pause x*10: next x
-76 DATA "\  \  \  \'.\.'\  \  \  ","\  \  \.:\'.\.'\:.\. \. ","\ .\  \. \: \ :\ .\  \. \  ","\. \. \..\''\..\ .\ .","\.:\. \''\  \  \''\ .\:. ","\'.\  \. \ .\. \ .\  \.'"
-77 PRINT AT 3,0;"and forms the words":PAUSE 100: PRINT BRIGHT 1; AT 11,11;"BLACK MIRROR": PAUSE 200: PRINT AT 14,0;"The words shatter like broken", "glass...": PAUSE 100: PLOT 0,115: DRAW 255,-52: BEEP 0.01, 10: PLOT 0,84: DRAW 200,-7: BEEP 0.01,5: PAUSE 100: PRINT AT 20,0;"...then melt into darkness": PAUSE 100: CLS:PAUSE 100
-78 PRINT AT 11,11; BRIGHT 1; "Bandersnatch": PAUSE 100: CLS
+75 for x = 7 to 1 step -1: read a$: print bright 1;at 11,11;a$: beep 0.01,8: pause x*5: next x
+76 DATA "\  \  \  \  \ .\':\:'\. \  \  \  \  ", "\  \  \  \  \ '\:.\.:\' \  \  \  \  ", "\  \ .\''\ .\ '\.:\:.\' \. \''\ .\  ", "\..\. \''\..\ '\ :\: \' \..\''\ .\..", "\' \: \' \:.\ .\  \':\ '\ .\ .\ :\ .", "\'.\  \. \. \. \ .\. \ .\ .\ .\  \.'", "\: \:.\. \:'\ '\  \''\: \:.\:.\' \:."
+77 PRINT AT 3,0;"and forms the words":PAUSE 100: PRINT BRIGHT 1; AT 11,11;"BLACK MIRROR": PAUSE 50: PRINT AT 14,0;"The words shatter like broken", "glass...": PAUSE 100: PLOT 0,115: DRAW 255,-52: BEEP 0.01, 10: PLOT 0,84: DRAW 200,-7: BEEP 0.01,5: PAUSE 100: PRINT AT 20,0;"...then melt into darkness": PAUSE 100: CLS:PAUSE 100
+78 PRINT AT 11,11; BRIGHT 1; "Bandersnatch": PAUSE 100: INK 7: CLS
 84 REM SCENE CODE LIVES AT 2000+200*S
-90 PRINT "9 JULY 1984"
-100 PRINT "YOU CHOOSE FOR STEFAN."
-110 PRINT "PRESS 1-4, OR Q TO QUIT."
-120 PRINT "PRESS A KEY TO START"
+90 print "A digital clock clicks on.": PAUSE 50: PRINT FLASH 1; INK 4; PAPER 0; AT 3,14;"08:30":PRINT ink 4; AT 5,7; "9th of July, 1984": pause 25
+100 PRINT AT 8,0;"Stefan, a young teenager asleep in bed awakes with a fake gasp,  clutching his chest.": pause 20: PRINT: PRINT "Next to the bed is a well-      thumbed paperback."
+101 REM Relax: GF# EDE G AB GE DE
+102 PAUSE 20: Beep .2,6: beep .8,7: pause 20: beep .2,4: beep .2,2: beep .2,4:pause 10
+103 beep .1,7: pause 5: beep .1,9: beep .1,9: pause 5:beep .1,7: beep .1,4: pause 5: beep .2,2: beep .2,4
+110 PRINT INK 3;at 19,0;"Press a key to turn off alarm"
+120 IF INKEY$<>"" THEN GOTO 101
+121 IF INKEY$="" THEN STOP
 130 GO SUB 7900
 140 GO SUB 8000
 200 POKE 23692,255: CLS
