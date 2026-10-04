@@ -14,14 +14,13 @@
 77 PRINT AT 3,0;"and forms the words":PAUSE 100: PRINT BRIGHT 1; AT 11,11;"BLACK MIRROR": PAUSE 50: PRINT AT 14,0;"The words shatter like broken", "glass...": PAUSE 100: PLOT 0,115: DRAW 255,-52: BEEP 0.01, 10: PLOT 0,84: DRAW 200,-7: BEEP 0.01,5: PAUSE 100: PRINT AT 20,0;"...then melt into darkness": PAUSE 100: CLS:PAUSE 100
 78 PRINT AT 11,11; BRIGHT 1; "Bandersnatch": PAUSE 100: INK 7: CLS
 84 REM SCENE CODE LIVES AT 2000+200*S
-90 print "A digital clock clicks on.": PAUSE 50: PRINT FLASH 1; INK 4; PAPER 0; AT 3,14;"08:30":PRINT ink 4; AT 5,7; "9th of July, 1984": pause 25
+90 print "A digital clock radio clicks on, playing 'Relax'": PAUSE 50: PRINT FLASH 1; INK 4; PAPER 0; AT 3,14;"08:30":PRINT ink 4; AT 5,7; "9th of July, 1984": pause 25
 100 PRINT AT 8,0;"Stefan, a young teenager asleep in bed awakes with a fake gasp,  clutching his chest.": pause 20: PRINT: PRINT "Next to the bed is a well-      thumbed paperback."
 101 REM Relax: GF# EDE G AB GE DE
-102 PAUSE 20: Beep .2,6: beep .8,7: pause 20: beep .2,4: beep .2,2: beep .2,4:pause 10
-103 beep .1,7: pause 5: beep .1,9: beep .1,9: pause 5:beep .1,7: beep .1,4: pause 5: beep .2,2: beep .2,4
-110 PRINT INK 3;at 19,0;"Press a key to turn off alarm"
-120 IF INKEY$<>"" THEN GOTO 101
-121 IF INKEY$="" THEN STOP
+102 PRINT INK 3;at 19,0;"Press a key to turn off alarm"
+106 PAUSE 20: Beep .2,6: beep .8,7: pause 20: beep .2,4: beep .2,2: beep .2,4:pause 10
+107 beep .1,7: pause 5: beep .1,9: beep .1,9: pause 5:beep .1,7: beep .1,4: pause 5: beep .2,2: beep .2,4
+120 IF INKEY$<>"" THEN GOTO 106
 130 GO SUB 7900
 140 GO SUB 8000
 200 POKE 23692,255: CLS
@@ -30,7 +29,7 @@
 230 IF Z=1 THEN GO TO 940
 240 GO TO 200
 900 CLS
-910 PRINT "THE SESSION HAS ENDED."
+910 PRINT AT 11,12;"GAME OVER"
 920 GO TO 940
 940 PRINT
 950 PRINT "PLAY AGAIN? Y/N"
@@ -39,15 +38,16 @@
 980 IF A$="N" OR A$="n" THEN PRINT "END": STOP
 990 GO TO 960
 2200 REM S=1 BREAKFAST
-2210 INK 6: PRINT "BREAKFAST": INK 7
-2220 PRINT "HOW ABOUT YOU DECIDE"
-2230 PRINT "WHAT YOU WANT"
-2240 PRINT "FOR YOUR BREAKFAST?"
-2250 PRINT "BOTH SEEM A BIT"
-2260 PRINT "KIDDYWINK TO ME,"
-2270 PRINT "BUT YOU WILL INSIST."
-2280 PRINT "1 SUGAR PUFFS"
-2290 PRINT "2 FROSTIES"
+2201 print "In the bathroom, the 19-year old who has a mop of curly dark      hair, unscrews the top of a bottle of pills and shakes two capsules into the palm of his hand.":PRINT: PRINT " He swallows them down with a gulp of water from the tap, looking at his reflection.": PAUSE 500: CLS
+2202 print "A 40-year old man comes out of a room. Locking the door, he looks up to see Stefan emerging from the bathroom.": PAUSE 200: PRINT "'Breakfast', he asks.":PAUSE 100: PRINT "Stefan walks past him with a smiling nod.": PAUSE 100:PRINT: PRINT "At the breakfast table, now dressed, he's leafing through the thick book.": PAUSE 100: PRINT :PRINT "His dad stubs a cigarette out on a glass ashtray and peers at the boy behind his specs.": PAUSE 200: CLS
+2203 PRINT INK 6;"Here's your tea.":PAUSE 50:  PRINT INK 5;"Thanks, Dad.": PAUSE 50:PRINT "Sorry. Sorry, I was miles away. Got to get everything ready for today.": PAUSE 50
+2204 PRINT INK 6; "This with some computer people?":PAUSE 50: PRINT INK 5;"Yeah. Tuckersoft. They do Colin Ritman's games.":PAUSE 50: PRINT INK 6; "Oh, not THE Colin Ritman.": PAUSE 50: PRINT INK 5;"Mr. Thakur, the owner, said I could show them my Bandersnatch demo."
+2205 pause 50: PRINT INK 6;"-Your Bander-what?": pause 50: PRINT INK 5; "Bandersnatch. I've based it on the book.":pause 50: print:  PRINT INK 7;"He shows dad the front cover": pause 200: cls
+2206 PRINT INK 6; "Was that your mother's?": PRINT INK 5; "It was in her things, yeah. Don't know if she read it though.": PRINT INK 6;"Don't think so. 'Jerome F. Davies.'... Well, he can't be a great writer.": PAUSE 25:PRINT "You're always flicking backwards and forwards in that."
+2207 PRINT INK 5;"No, it's a Choose Your Own Adventure book. You decide what your character does.":PAUSE 50: PRINT "You know, like a game."
+2220 PRINT INK 6;"Sound thrilling. How about you decide what you want for your breakfast."
+2230 PRINT INK 1; AT 20,2;"(1) SUGAR PUFFS"; AT 20, 18;INK 2 "(2) FROSTIES"
+2240 PRINT AT 18,0; INK 5; "Both seem a bit kiddywinks to me. But you will insist."
 2300 LET N=2: GO SUB 7100
 2310 IF Q=1 THEN RETURN
 2320 LET S=2
